@@ -61,10 +61,10 @@
 <?php 
     // berikut ada percabangan untuk memvalidasi agar form diisi terlebih dahulu
     if (!empty($namaRumus) && !empty($hasilPerhitungan)) {
-        echo "Nilai A = $nilai01 <br>";
-        echo "Nilai B = $nilai02 <br>";
+        echo "Nilai A = $nilai01 cm <br>";
+        echo "Nilai B = $nilai02 cm <br>";
         echo "Rumus yang Dipilih adalah = $namaRumus <br>";
-        echo "Hasil Perhitungan Rumus = $hasilPerhitungan <br>";
+        echo "Hasil Perhitungan Rumus = $hasilPerhitungan cm <br>";
     } else {
         echo "Silakan pilih rumus terlebih dahulu dan masukkan nilai-nilai yang sesuai.";
     }
