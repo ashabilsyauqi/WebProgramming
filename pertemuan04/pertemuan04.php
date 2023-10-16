@@ -1,7 +1,7 @@
 <?php
     // contoh operator matematika
-    $bilangan1 = 12;
-    $bilangan2 = 19;
+    $bilangan1 = 200;
+    $bilangan2 = 40;
 
     $pertambahan = $bilangan1 + $bilangan2;
     $pembagian = $bilangan1 / $bilangan2;
@@ -22,8 +22,8 @@
 <?php 
     // operator pembandingan
 
-    $bilangan_1 = 19 ;
-    $bilangan_2 = 12 ;
+    $bilangan_1 = 40 ;
+    $bilangan_2 = 200 ;
 
     $text01 = "PHP";
     $text02 = "php";
@@ -55,8 +55,8 @@
 <?php
     // Operator pembandingan
 
-    $bilangan_1 = 19;
-    $bilangan_2 = 12;
+    $bilangan_1 = 40;
+    $bilangan_2 = 200;
 
     $text01 = "PHP";
     $text02 = "php";
@@ -81,8 +81,8 @@
 
 <?php 
     // contoh operator Logika
-    $bil01 = 19;
-    $bil02 = 12;
+    $bil01 = 40;
+    $bil02 = 200;
 
     $teks01 = "PHP";
     $teks02 = "php";

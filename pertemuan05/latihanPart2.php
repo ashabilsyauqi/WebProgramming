@@ -9,25 +9,31 @@
     <hr>
     <?php
 
-    echo "
-        <table>
-            <tr>
-                <td>Nama Pengunjung</td>
-                <td>:</td>
-                <td>$_POST[nama]</td>
-            </tr>
-            <tr>
-                <td>Email Pengunjung</td>
-                <td>:</td>
-                <td>$_POST[email]</td>
-            </tr>
-            <tr>
-                <td>Komentar</td>
-                <td>:</td>
-                <td>$_POST[komentar]</td>
-            </tr>
-         </table>
-        ";
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $komentar = $_POST['komentar'];
+
+    if(!empty($nama)) {
+        echo "Nama Anda      : $nama <br>";
+    } else {
+        ?>
+        <font color="red"> <?php
+        die("<p style='color: #292929;' >Maaf. Anda harus mengisi Nama</p>  <br>    <a href='latihan.php'>Input Data lagi</a>");
+    }
+
+    if(!empty($email)) {
+        echo "email Anda      : $email <br>";
+    } else {
+        ?> <font color="red"> <?php
+        die("<p style='color: #292929;' >Maaf. Anda harus mengisi Nama</p>  <br>    <a href='latihan.php'>Input Data lagi</a>");
+    }
+
+    if(!empty($komentar)) {
+        echo "komentar Anda      : $komentar <br>";
+    } else {
+        ?><font color="red"> <?php
+        die("<p style='color: #292929;' >Maaf. Anda harus mengisi Nama</p>  <br>    <a href='latihan.php'>Input Data lagi</a>");
+    }
 
     ?>
     <a href="latihan.php">Input Data lagi</a>

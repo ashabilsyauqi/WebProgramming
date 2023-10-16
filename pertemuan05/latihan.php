@@ -1,55 +1,40 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST["nama"];
+    $email = $_POST["email"];
+    $komentar = $_POST["komentar"];
+
+    if (empty($nama) || empty($email)) {
+        echo "<p text='#FF0000'>Silakan isi semua kolom yang diperlukan (Nama dan Email).</p>";
+    } else {
+
+
+        echo "<p>Data telah berhasil disubmit.</p>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Form</title>
+    <!-- Meta tags, title, dan CSS lainnya -->
 </head>
+
 <body>
-    <h1>Buku Tamu</h1> 
+    <h1>Buku Tamu</h1>
     <br>
-    <p>komentar dan saran anda sangat kami butuhkan untuk meningkatkan kulitas situs kami</p>
+    <p>komentar dan saran anda sangat kami butuhkan untuk meningkatkan kualitas situs kami</p>
     <hr>
     <form action="latihanPart2.php" method="post">
-
-
-        <table>
-            <tr>
-                <td>
-                <label for="nama">Masukan Nama Anda</label>
-                </td>
-                <td>:</td>
-                <td>
-                <input type="text" name="nama" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">Masukan Email</label>
-                </td>
-                <td>:</td>
-                <td>
-                    <input type="email" name="email" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="komentar">Komentar</label>
-                </td>
-                <td>:</td>
-                <td>
-                    <textarea name="komentar" id="komentar" cols="50" rows="10"></textarea>
-                </td>
-            </tr>
-        </table>
-
+        Masukan Nama Anda : <input type="text" name="nama"> 
+        <br>
+        Masukan Nama Anda : <input type="email" name="email">
+        <br>
+        Masukan Nama Anda : <textarea name="komentar" id="komentar" cols="50" rows="10"></textarea>
+        <br>
         <input type="submit" value="Kirim">
         <input type="reset" value="Batal">
-
-
-
-       
-     
     </form>
 </body>
+
 </html>
