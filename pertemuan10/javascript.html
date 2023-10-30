@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript</title>
+    <script>
+        const function01 = (event) => {
+            // Menghentikan pengiriman formulir untuk mencegah pembaruan halaman
+            event.preventDefault();
+
+            // Mengambil nilai dari elemen input
+            const inputElement = document.getElementById("text");
+            const inputValue = inputElement.value;
+
+            // Menampilkan nilai di dalam fungsi atau melakukan apa yang Anda inginkan dengannya
+            document.write("Nilai input: " + inputValue);
+        }
+    </script>
+</head>
+
+<body>
+    <form onsubmit="function01(event)">
+        <input type="text" id="text"/>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
